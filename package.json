@@ -1,0 +1,19 @@
+{
+  "name": "gaems",
+  "version": "1.0.0",
+  "description": "A place to remember your favorite GAems because we want to make sure that ever General Assembly Moment is Saved.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taliwalt/GAems.git"
+  },
+  "author": "Tali and Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taliwalt/GAems/issues"
+  },
+  "homepage": "https://github.com/taliwalt/GAems#readme"
+}
