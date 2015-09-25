@@ -19,7 +19,7 @@ app.use(morgan( 'dev' ))
 mongoose.connect('localhost:27017/GAems')
 
 //tells the app to use apiRouter
-app.use( 'api', apiRouter)
+// app.use( 'api', apiRouter)
 
 //server 
 app.listen(8080)
