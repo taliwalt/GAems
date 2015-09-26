@@ -44,10 +44,10 @@ app.use('/api', apiRouter)
 
 //	GAEMS ROUTES
 //	------------
-app.route('/gaems')
-	.get(function (req, res) {
-		res.json({ message: "This is where the gaems will show up" })
-	});
+// app.route('/gaems')
+// 	.get(function (req, res) {
+// 		res.json({ message: "This is where the gaems will show up" })
+// 	});
 
 //	SERVER
 //	======
