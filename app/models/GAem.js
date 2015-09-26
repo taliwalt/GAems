@@ -6,7 +6,7 @@ var mongoose = require( 'mongoose'),
 
 var GaemSchema = new Schema({
 	quote: String,
-	user: [ { type: mongoose.Schema.Types.ObjectID, ref: 'User' } ],
+	user: [ { type: Schema.Types.ObjectId, ref: 'User' } ],
 	created_at: Date
 });
 
