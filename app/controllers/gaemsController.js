@@ -7,25 +7,24 @@ function index(req, res){
 	})
 }
 
-// function create(req, res){
-// 	// make a new, empty user
-// 	var gaem = new Gaem()
-// 	// set the empty user's name, username and password --
-// 	// to the name, username, and password that are in the --
-// 	// request's body
-// 	user.name = req.body.name
-// 	user.username = req.body.username
-// 	user.password = req.body.password
+function create(req, res){
+	// make a new 
+	var GAem = new GAem()
+	// set the empty user's name, username and password --
+	// to the name, username, and password that are in the --
+	// request's body
+	GAem.quote = req.body.quote
+	GAem.user = req.body.user
 
-// 	// try to save this new user to the db
-// 	user.save(function(err){
-// 		// if there's an error, send back a response with an error message
-// 		if(err) return res.json({message: "computer says noooo"})
+	// try to save this new user to the db
+	GAem.save(function(err){
+		// if there's an error, send back a response with an error message
+		if(err) return res.send(err)
 		
-// 		// if there's not an error, tell them they successfully created a new user
-// 		res.json({message: "new user created!"})
-// 	})
-//}
+		// if there's not an error, tell them they successfully created a new user
+		res.json({message: "new GAem created!"})
+	})
+}
 
 
 // function show(req,res){
@@ -77,9 +76,9 @@ function index(req, res){
 // }
 
 module.exports = {
-	index: index
-	//create: create,
-//	show: show
+	index: index,
+	create: create
+	//show: show
 	//update: update,
 	//destroy: destroy
 }

@@ -28,5 +28,8 @@ apiRouter.route('/users/:user_id')
 
 	// this is the destroy function
 	.delete(usersController.destroy)
-
+	
+apiRouter.route('/users/:user_id/')
+	.post(gaemsController.create)
+	
 module.exports = apiRouter

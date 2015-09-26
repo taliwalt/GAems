@@ -1,13 +1,12 @@
-//grabs the packages needed 
+//grabs the packages needed
 var mongoose = require( 'mongoose'),
 	Schema = mongoose.Schema,
 	User = require ( './User' );
-
 //post Schema which also includes a referecne to the User model
 
 var GaemSchema = new Schema({
 	quote: String,
-	user: [User.schema],
+	user: [ { type: mongoose.Schema.Types.ObjectID, ref: 'User' } ],
 	created_at: Date
 });
 
